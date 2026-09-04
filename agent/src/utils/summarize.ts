@@ -1,6 +1,6 @@
 import { HumanMessage, SystemMessage } from "@langchain/core/messages";
-import { getChatModel } from "../shared/models";
-import { SummarizeInputSchema, SummarizeOutputSchema } from "./schemas";
+import { getChatModel } from "../shared/models.js";
+import { SummarizeInputSchema, SummarizeOutputSchema } from "./schemas.js";
 
 export async function summarize(text: string) {
   const { text: raw } = SummarizeInputSchema.parse({ text });

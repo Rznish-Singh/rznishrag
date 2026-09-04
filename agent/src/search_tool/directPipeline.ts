@@ -2,8 +2,8 @@
 // call tavily, fetch, summarize - dont
 
 import { RunnableLambda } from "@langchain/core/runnables";
-import { candidate } from "./types";
-import { getChatModel } from "../shared/models";
+import { candidate } from "./types.js";
+import { getChatModel } from "../shared/models.js";
 import { HumanMessage, SystemMessage } from "@langchain/core/messages";
 
 // ask the model

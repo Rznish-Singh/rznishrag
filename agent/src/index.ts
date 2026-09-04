@@ -1,8 +1,8 @@
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
-import { searchRouter } from "./routes/search_lcel";
-import { kbRouter } from "./routes/light_rag_kb";
+import { searchRouter } from "./routes/search_lcel.js";
+import { kbRouter } from "./routes/light_rag_kb.js";
 
 const app = express();
 

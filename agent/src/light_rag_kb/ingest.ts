@@ -4,8 +4,8 @@
 // return a summary so that UI can say this like
 // added 1 documents with "this many chunks (20, 5, 6)" from "this file -"
 
-import { chunkText } from "./chunk";
-import { addChunks } from "./store";
+import { chunkText } from "./chunk.js";
+import { addChunks } from "./store.js";
 
 // 2 pipeline
 // ingestion/ indexing -> prepare knowledge

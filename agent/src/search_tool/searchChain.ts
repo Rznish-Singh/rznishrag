@@ -2,11 +2,11 @@
 // {q, mode -> web | direct}
 
 import { RunnableBranch, RunnableSequence } from "@langchain/core/runnables";
-import { webPath } from "./webPipeline";
-import { directPath } from "./directPipeline";
-import { routerStep } from "./routeStrategy";
-import { finalValidateAndPolish } from "./finalValidate";
-import { SearchInput } from "../utils/schemas";
+import { webPath } from "./webPipeline.js";
+import { directPath } from "./directPipeline.js";
+import { routerStep } from "./routeStrategy.js";
+import { finalValidateAndPolish } from "./finalValidate.js";
+import { SearchInput } from "../utils/schemas.js";
 
 // web -> webPath
 // directPath

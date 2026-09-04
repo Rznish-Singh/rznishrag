@@ -1,5 +1,5 @@
 import { RunnableLambda } from "@langchain/core/runnables";
-import { SearchInputSchema } from "../utils/schemas";
+import { SearchInputSchema } from "../utils/schemas.js";
 
 export function routeStrategy(q: string): "web" | "direct" {
   const trimedQuery = q.toLowerCase().trim();

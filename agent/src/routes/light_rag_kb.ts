@@ -1,8 +1,8 @@
 import { Router } from "express";
 import * as z from "zod";
-import { ingestText } from "../light_rag_kb/ingest";
-import { resetStore } from "../light_rag_kb/store";
-import { askKB } from "../light_rag_kb/ask";
+import { ingestText } from "../light_rag_kb/ingest.js";
+import { resetStore } from "../light_rag_kb/store.js";
+import { askKB } from "../light_rag_kb/ask.js";
 
 export const kbRouter = Router();
 

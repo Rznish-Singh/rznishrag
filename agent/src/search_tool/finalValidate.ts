@@ -2,9 +2,9 @@
 // final polish
 
 import { RunnableLambda } from "@langchain/core/runnables";
-import { candidate } from "./types";
-import { SearchAnswerSchema } from "../utils/schemas";
-import { getChatModel } from "../shared/models";
+import { candidate } from "./types.js";
+import { SearchAnswerSchema } from "../utils/schemas.js";
+import { getChatModel } from "../shared/models.js";
 import { HumanMessage, SystemMessage } from "@langchain/core/messages";
 
 export const finalValidateAndPolish = RunnableLambda.from(

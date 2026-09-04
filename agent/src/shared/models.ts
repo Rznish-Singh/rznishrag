@@ -1,4 +1,4 @@
-import { env } from "./env";
+import { env } from "./env.js";
 import { ChatOpenAI } from "@langchain/openai";
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { ChatGroq } from "@langchain/groq";

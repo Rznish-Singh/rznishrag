@@ -3,8 +3,8 @@
 // it calls tavily under the hood
 // it returns a clean array of search hits -> WebSearchResultSchema
 
-import { env } from "../shared/env";
-import { WebSearchResultSchema, WebSearchResultsSchema } from "./schemas";
+import { env } from "../shared/env.js";
+import { WebSearchResultSchema, WebSearchResultsSchema } from "./schemas.js";
 
 export async function webSearch(q: string) {
   const query = (q ?? "").trim();

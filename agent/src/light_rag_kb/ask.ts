@@ -2,8 +2,8 @@
 // what is our refund policy for late payments ? -> query
 
 import { HumanMessage, SystemMessage } from "@langchain/core/messages";
-import { getChatModel } from "../shared/models";
-import { getVectorStore } from "./store";
+import { getChatModel } from "../shared/models.js";
+import { getVectorStore } from "./store.js";
 
 // 1 -> embed the query
 // vector -> array of numbers

@@ -1,5 +1,5 @@
 import { convert } from "html-to-text";
-import { OpenUrlOutputSchema } from "./schemas";
+import { OpenUrlOutputSchema } from "./schemas.js";
 
 // fetch each and every page
 // the LLM itself can't browse the web

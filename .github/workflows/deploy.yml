@@ -1,1 +1,37 @@
+name: CI/CD
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~/rznishrag
+
+            git pull origin main
+
+            # Frontend
+            cd frontend
+            npm ci
+            npm run build
+            pm2 restart frontend
+
+            # Agent
+            cd ../agent
+            npm ci
+            npm run build
+            pm2 restart agent
+
+            # Save PM2 process list
+            pm2 save
